@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /recetas-secretas/
+
+
+Sitemap: https://coopesantos.com/sitemap.xml

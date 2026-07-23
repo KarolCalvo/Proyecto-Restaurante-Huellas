@@ -1,0 +1,104 @@
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+/* Colores  */
+:root {
+    --primario: #8c2d19;
+    --secundario: #d97d24;
+    --acento: #4a5d4e;
+    --fondo: #faf6f0;
+    --texto: #2c2523;
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado y Navegación */
+header {
+    background: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo { max-height: 50px; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+}
+
+nav a:hover { color: var(--primario); }
+
+/* Cuerpo Principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: var(--primario);
+    text-align: center;
+    border-bottom: 3px solid var(--secundario);
+    padding-bottom: 10px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+h2 {
+    color: var(--acento);
+    border-left: 5px solid var(--secundario);
+    padding-left: 10px;
+}
+
+/* Tarjetas de Contenido */
+article {
+    background: #fdfcfb;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: translateY(-2px);
+    border-color: var(--secundario);
+}
+
+h3 { color: var(--primario); }
+
+/* Detalle verde para el Menú */
+#menu article { border-left: 4px solid var(--acento); }
+
+/* Pie de Página */
+footer {
+    background: var(--primario);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
