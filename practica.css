@@ -5,11 +5,11 @@
 
 /* Colores  */
 :root {
-    --primario: #8c2d19;
-    --secundario: #d97d24;
-    --acento: #4a5d4e;
-    --fondo: #faf6f0;
-    --texto: #2c2523;
+    --primario: #0288d1;     /* Azul oceánico */
+    --secundario: #00bcd4;   /* Cyan brillante */
+    --acento: #ff9800;       /* Naranja para detalles */
+    --fondo: #e0f7fa;        /* Fondo celeste claro muy visible */
+    --texto: #00363a;        /* Texto azul oscuro */
 }
 
 body {
