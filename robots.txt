@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /recetas-secretas/
 
 
-Sitemap: https:huellas-proyecto.infinityfree.me/sitemap.xml
+Sitemap: https://coopesantos.com/sitemap.xml
