@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* Encabezado y Menú */
+header {
+  background-color: #ffffff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Tamaño del logotipo corregido */
+header .logo, nav img, .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d35400;
+}
+
+/* Hero / Banner */
+.hero-title {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px;
+  /* Ruta a la imagen desde la carpeta css hacia img */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/Banner_restaurante.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: #d35400;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Secciones Generales */
+.section-padding {
+  padding: 50px 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  color: #2c3e50;
+}
+
+/* Tarjetas */
+.cards-grid, .menu-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card, .menu-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 260px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.card-icon {
+  font-size: 32px;
+  color: #d35400;
+  margin-bottom: 12px;
+}
+
+.precio {
+  display: block;
+  font-weight: bold;
+  color: #d35400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Galería */
+.gallery-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Formulario */
+.contenedor {
+  background-color: #fff;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contenedor h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b94600;
+}
+
+/* Trampa Honeypot */
+.campo-trampa {
+  display: none !important;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
